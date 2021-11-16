@@ -1,0 +1,52 @@
+{
+  "name": "budnode-api",
+  "version": "1.0.0",
+  "author": "BudTeam",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon bin/www",
+    "doc": "apidoc -i routes/ -o public/doc/",
+    "doc:md": "apidoc-markdown -p public/doc/ -o doc/doc_markdown.md"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.3",
+    "connect-mongo": "~2.0.3",
+    "connect-redis": "^3.4.1",
+    "cookie-parser": "~1.4.3",
+    "ejs": "~2.6.1",
+    "excel-export": "^0.5.1",
+    "express": "~4.16.4",
+    "express-session": "^1.17.0",
+    "formidable": "^1.2.1",
+    "ioredis": "^4.14.1",
+    "mongoose": "^5.7.10",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "node-apollo": "^1.2.1",
+    "node-schedule": "^1.3.2",
+    "node-xlsx": "^0.15.0",
+    "qiniu": "7.2.2",
+    "soap": "~0.26.0",
+    "superagent": "~4.1.0",
+    "urllib": "^2.34.1",
+    "validatorjs": "^3.17.1",
+    "xml2js": "^0.4.22"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "apidoc": "^0.17.7",
+    "apidoc-markdown": "^0.2.1",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^5.2.1",
+    "cross-spawn": "^5.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-async-await": "^0.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "nodemon": "^1.19.4"
+  },
+  "apidoc": {
+    "title": "接口文档",
+    "url": "http://localhost:3005",
+    "sampleUrl": "http://localhost:3005"
+  }
+}
